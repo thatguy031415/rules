@@ -2,6 +2,7 @@ rule CAP_HookExKeylogger
 {
 meta:
     author = "Brian C. Bell -- @biebsmalwareguy"
+    description = "Keyboard hooking detected; potential keylogger; highly suspicious."
 
 	strings:
 	$str_Win32hookapi = "SetWindowsHookEx" nocase
